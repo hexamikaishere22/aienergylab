@@ -1,6 +1,7 @@
 import { type ReactNode } from 'react';
 import { ThemeProvider } from 'next-themes';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
@@ -52,6 +53,7 @@ function App() {
             <Router />
           </WouterRouter>
           <Toaster />
+          <SpeedInsights />
         </TooltipProvider>
       </QueryClientProvider>
     </ThemeProvider>
