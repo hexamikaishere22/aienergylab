@@ -1,0 +1,38 @@
+# Memperbarui public/news.json secara otomatis, lalu menyimpannya ke repositori.
+# Jika situsmu di-deploy otomatis dari repositori (Netlify, Vercel, Cloudflare Pages, dll.),
+# commit ini akan memicu deploy ulang sehingga berita di situs ikut terbarui.
+name: Perbarui berita AI
+
+on:
+  schedule:
+    - cron: '17 */3 * * *' # tiap 3 jam (waktu UTC)
+  workflow_dispatch: # bisa dijalankan manual dari tab Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-news
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Ambil berita dari RSS
+        run: node scripts/fetch-news.mjs --strict
+      - name: Simpan jika ada perubahan
+        run: |
+          if git diff --quiet -- public/news.json; then
+            echo "Tidak ada perubahan."
+            exit 0
+          fi
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add public/news.json
+          git commit -m "chore: perbarui berita AI"
+          git push

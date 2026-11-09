@@ -1,0 +1,679 @@
+{
+ "generatedAt": "2026-11-09T12:49:25.014Z",
+ "checkedAt": "2026-11-09T12:49:25.014Z",
+ "sources": [
+  {
+   "id": "cnn-indonesia",
+   "name": "CNN Indonesia",
+   "url": "https://www.cnnindonesia.com/teknologi/rss",
+   "ok": true,
+   "total": 100,
+   "matched": 22,
+   "error": null
+  },
+  {
+   "id": "cnbc-indonesia",
+   "name": "CNBC Indonesia",
+   "url": "https://www.cnbcindonesia.com/tech/rss",
+   "ok": true,
+   "total": 100,
+   "matched": 30,
+   "error": null
+  },
+  {
+   "id": "antara",
+   "name": "ANTARA",
+   "url": "https://www.antaranews.com/rss/tekno.xml",
+   "ok": true,
+   "total": 20,
+   "matched": 1,
+   "error": null
+  },
+  {
+   "id": "detik",
+   "name": "detikInet",
+   "url": "https://rss.detik.com/index.php/inet",
+   "ok": false,
+   "total": 0,
+   "matched": 0,
+   "error": "fetch failed (ECONNRESET)"
+  },
+  {
+   "id": "tempo",
+   "name": "Tempo",
+   "url": "https://rss.tempo.co/tekno",
+   "ok": false,
+   "total": 0,
+   "matched": 0,
+   "error": "HTTP 403"
+  }
+ ],
+ "items": [
+  {
+   "id": "19730cf851f3",
+   "title": "Google Ancam Sekolah, Walikota Muslim New York Ngamuk",
+   "url": "https://www.cnbcindonesia.com/tech/20261109130514-37-783532/google-ancam-sekolah-walikota-muslim-new-york-ngamuk",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-09T12:40:00.000Z",
+   "summary": "Walikota New York, Zohran Mamdani, mengecam Google yang memaksa penggunaan AI di sekolah.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "0194135fabcd",
+   "title": "Kacamata AI Meta Masuk RI, Komdigi Kasih Peringatan Buat Warga",
+   "url": "https://www.cnbcindonesia.com/tech/20261109154404-37-783616/kacamata-ai-meta-masuk-ri-komdigi-kasih-peringatan-buat-warga",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-09T11:10:00.000Z",
+   "summary": "Kacamata pintar berbasis AI akan hadir di Indonesia pada 11 November. Masyarakat diimbau berhati-hati. Simak!",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "fb1bef5de42f",
+   "title": "Bitera Klaim Pusat Datanya Lebih Ramah Lingkungan, Ini Rahasianya",
+   "url": "https://www.cnnindonesia.com/teknologi/20261109175559-192-1425084/bitera-klaim-pusat-datanya-lebih-ramah-lingkungan-ini-rahasianya",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-09T11:04:12.000Z",
+   "summary": "Bitera, penyedia data center di Jakarta, mengutamakan keberlanjutan dengan sistem pendingin efisien dan sertifikasi internasional untuk keamanan dan kualitas.",
+   "topics": [
+    "ai",
+    "energi"
+   ]
+  },
+  {
+   "id": "d8282c19c1a2",
+   "title": "Fenomena Gen Z Lulus Kuliah Jadi Pengangguran, Tak Ada Lapangan Kerja",
+   "url": "https://www.cnbcindonesia.com/tech/20261109124703-37-783515/fenomena-gen-z-lulus-kuliah-jadi-pengangguran-tak-ada-lapangan-kerja",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-09T08:45:00.000Z",
+   "summary": "Lulusan baru menghadapi tantangan pekerjaan akibat otomatisasi AI. Presiden Nasscom serukan perlunya adaptasi kurikulum pendidikan.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "df9e61f617a1",
+   "title": "Profil Jensen Huang, Manusia Rp3.000 T yang Diterpa Isu Perselingkuhan",
+   "url": "https://www.cnnindonesia.com/teknologi/20261109145253-185-1424999/profil-jensen-huang-manusia-rp3000-t-yang-diterpa-isu-perselingkuhan",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-09T08:30:07.000Z",
+   "summary": "CEO Nvidia, Jensen Huang, terlibat skandal perselingkuhan dengan Alice Huang, diduga mata-mata China. Nvidia lakukan penyelidikan independen terkait kasus ini.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "e75944ba20b7",
+   "title": "Tolak Data Center, Pakar Lingkungan Ungkap Fakta Tak Terduga",
+   "url": "https://www.cnbcindonesia.com/tech/20261109125825-37-783523/tolak-data-center-pakar-lingkungan-ungkap-fakta-tak-terduga",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-09T08:05:00.000Z",
+   "summary": "Organisasi lingkungan mulai memanfaatkan AI untuk konservasi, meski menghadapi dilema dampak lingkungan dari data center.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "5bdc5b64d6fe",
+   "title": "Menlu Rubio Ngaku Sempat Peringatkan Soal Perselingkuhan Jensen Huang",
+   "url": "https://www.cnnindonesia.com/teknologi/20261109144134-185-1424990/menlu-rubio-ngaku-sempat-peringatkan-soal-perselingkuhan-jensen-huang",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-09T08:00:02.000Z",
+   "summary": "Menlu AS Marco Rubio memperingatkan tentang hubungan CEO Nvidia Jensen Huang dengan terduga intelijen China, Alice Huang.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "f0e3989050b9",
+   "title": "Respons Trump Tahu CEO Nvidia Selingkuh Sama Mata-Mata China",
+   "url": "https://www.cnbcindonesia.com/tech/20261109123718-37-783513/respons-trump-tahu-ceo-nvidia-selingkuh-sama-mata-mata-china",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-09T06:55:00.000Z",
+   "summary": "Nvidia dilanda skandal intelijen asing yang melibatkan CEO Jensen Huang. Donald Trump beri komen tak terduga. Simak!",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "564878a502f0",
+   "title": "Isi Surat Permintaan Maaf Jensen Huang Terkait Isu Perselingkuhan",
+   "url": "https://www.cnnindonesia.com/teknologi/20261109114223-185-1424877/isi-surat-permintaan-maaf-jensen-huang-terkait-isu-perselingkuhan",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-09T06:30:24.000Z",
+   "summary": "CEO Nvidia Jensen Huang menyampaikan permohonan maaf atas isu perselingkuhannya serta mendukung penyelidikan keamanan nasional.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "eab2c6a15c3d",
+   "title": "Ramai-Ramai Tolak Data Center, Proyek Disetop di RI-Malaysia-Thailand",
+   "url": "https://www.cnbcindonesia.com/tech/20261109115327-37-783492/ramai-ramai-tolak-data-center-proyek-disetop-di-ri-malaysia-thailand",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-09T06:05:00.000Z",
+   "summary": "Gelombang protes menghentikan proyek data center di Asia Tenggara, termasuk Indonesia, Malaysia, Thailand.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "50085b3d8376",
+   "title": "China Bantah Incar Jensen Huang Jadi Target Operasi Intelijen",
+   "url": "https://www.cnnindonesia.com/teknologi/20261109123641-185-1424904/china-bantah-incar-jensen-huang-jadi-target-operasi-intelijen",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-09T05:43:52.000Z",
+   "summary": "China bantah tuduhan spionase terhadap CEO Nvidia, Jensen Huang. Tuduhan dianggap spekulasi tanpa dasar dan upaya pencemaran nama baik.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "9fc2e7814680",
+   "title": "Kejayaan Nvidia Runtuh Seketika Setelah CEO Mengaku Selingkuh",
+   "url": "https://www.cnbcindonesia.com/tech/20261109111306-37-783480/kejayaan-nvidia-runtuh-seketika-setelah-ceo-mengaku-selingkuh",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-09T05:05:00.000Z",
+   "summary": "Nvidia menghadapi krisis setelah CEO Jensen Huang dituduh terlibat skandal perselingkuhan dan intelijen asing. Simak selengkapnya!",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "101b5daf615b",
+   "title": "Data Center Microsoft Diserang, Warga Terobos Pagar Lalu Bakar Obor",
+   "url": "https://www.cnbcindonesia.com/tech/20261109105007-37-783457/data-center-microsoft-diserang-warga-terobos-pagar-lalu-bakar-obor",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-09T04:20:00.000Z",
+   "summary": "Ratusan aktivis demo di Amsterdam menolak pembangunan data center Microsoft.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "e2990dd2c318",
+   "title": "Siapa Alice Huang, Selingkuhan Bos Nvidia yang Diduga Mata-mata China?",
+   "url": "https://www.cnnindonesia.com/teknologi/20261109104618-185-1424847/siapa-alice-huang-selingkuhan-bos-nvidia-yang-diduga-mata-mata-china",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-09T04:17:19.000Z",
+   "summary": "Sosok Alice Huang atau Huang Le menjadi sorotan setelah disebut menjadi selingkuhan CEO Nvidia Jensen Huang. Siapa sebenarnya Alice Huang?",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "7623286d90a0",
+   "title": "Selingkuh dengan Terduga Mata-mata China, Jensen Huang Buka Suara",
+   "url": "https://www.cnnindonesia.com/teknologi/20261109101814-185-1424834/selingkuh-dengan-terduga-mata-mata-china-jensen-huang-buka-suara",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-09T03:21:36.000Z",
+   "summary": "CEO Nvidia Jensen Huang mengakui perselingkuhan dengan Alice Huang, yang diduga mata-mata China. Nvidia akan lakukan penyelidikan independen terkait isu ini.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "d1328ee3c8c0",
+   "title": "Jensen Huang Selingkuh dengan Alice Huang, Diduga Mata-mata China",
+   "url": "https://www.cnnindonesia.com/teknologi/20261109100856-185-1424832/jensen-huang-selingkuh-dengan-alice-huang-diduga-mata-mata-china",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-09T03:10:49.000Z",
+   "summary": "Nvidia akan menyelidiki CEO Jensen Huang terkait dugaan hubungan dengan Alice Huang, yang dicurigai sebagai mata-mata China.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "3d4a48098cbd",
+   "title": "Siapa Alice Huang? Teman Dekat Jensen Huang, Diduga Mata-Mata China",
+   "url": "https://www.cnbcindonesia.com/tech/20261109073026-37-783364/siapa-alice-huang-teman-dekat-jensen-huang-diduga-mata-mata-china",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-09T01:30:00.000Z",
+   "summary": "Alice Huang, terkait hubungan dengan Jensen Huang dari Nvidia, dituduh menyerahkan informasi sensitif ke China. Penyelidikan AS sedang berlangsung.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "13620738786b",
+   "title": "Isi Surat Pengakuan Selingkuh Manusia Rp3.000 T ke Pegawai Nvidia",
+   "url": "https://www.cnbcindonesia.com/tech/20261109065110-37-783350/isi-surat-pengakuan-selingkuh-manusia-rp3000-t-ke-pegawai-nvidia",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-09T00:10:00.000Z",
+   "summary": "Jensen Huang, CEO Nvidia, mengakui perselingkuhan dalam surat terbuka kepada karyawan. Ia juga terlibat dalam penyelidikan terkait dugaan mata-mata China.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "88f5bf41f4d0",
+   "title": "Manusia Rp 3.000 Triliun Mengaku Selingkuh dengan Mata-Mata China",
+   "url": "https://www.cnbcindonesia.com/tech/20261109054422-37-783344/manusia-rp-3000-triliun-mengaku-selingkuh-dengan-mata-mata-china",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-08T23:20:00.000Z",
+   "summary": "Pendiri Nvidia, Jensen Huang, mengakui perselingkuhannya dengan eksekutif Megaspeed.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "bead51369614",
+   "title": "11 November Kacamata AI Masuk RI, Cek Daftar Merek-Harganya di Sini",
+   "url": "https://www.cnbcindonesia.com/tech/20261108175739-37-783303/11-november-kacamata-ai-masuk-ri-cek-daftar-merek-harganya-di-sini",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-08T13:30:00.000Z",
+   "summary": "Kacamata pintar berbasis kecerdasan buatan (artificial intelligence/AI) dari Meta akan dipasarkan di Indonesia",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "7e31c32de78d",
+   "title": "Canggih! Muhammadiyah Ciptakan ChatHPT, Ini Fungsi Lengkapnya",
+   "url": "https://www.cnbcindonesia.com/tech/20261108101608-37-783261/canggih-muhammadiyah-ciptakan-chathpt-ini-fungsi-lengkapnya",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-08T11:15:00.000Z",
+   "summary": "Muhammadiyah luncurkan ChatHPT, asisten AI untuk akses putusan dan fatwa keagamaan. Ini fungsi lengkapnya.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "6ba2eab97a0a",
+   "title": "Lintasarta Dorong Kedaulatan Digital di Indonesia Pakai Jurus Ini",
+   "url": "https://www.cnbcindonesia.com/tech/20261108141735-37-783289/lintasarta-dorong-kedaulatan-digital-di-indonesia-pakai-jurus-ini",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-08T07:30:00.000Z",
+   "summary": "Lintasarta luncurkan inisiatif Merdeka AI untuk dukung kedaulatan digital Indonesia. Fokus pada infrastruktur dan layanan AI sesuai regulasi nasional.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "413896026e1b",
+   "title": "Modal AI, Kakek 96 Tahun Nekat Jelajahi Tibet Sendirian",
+   "url": "https://www.cnbcindonesia.com/tech/20261107161222-37-783202/modal-ai-kakek-96-tahun-nekat-jelajahi-tibet-sendirian",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-07T14:15:22.000Z",
+   "summary": "Pria 96 tahun asal China, Tan, melakukan perjalanan solo ke Tibet dengan bantuan AI setelah ditolak agen perjalanan.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "0969e9f40ba4",
+   "title": "DataOn HR Conference 2026 Ungkap Peran AI dalam Memperkuat SDM",
+   "url": "https://www.cnbcindonesia.com/tech/20261107190925-37-783211/dataon-hr-conference-2026-ungkap-peran-ai-dalam-memperkuat-sdm",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-07T12:17:49.000Z",
+   "summary": "DataOn 16th Annual HR Conference 2026 di Jakarta membahas penerapan AI dalam HR. Fokus pada kinerja SDM dan transformasi berbasis manusia.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "5f4aa32b52f3",
+   "title": "OpenAI Rilis Model Cybersecurity Terbaru, Bisa Apa Saja?",
+   "url": "https://www.cnnindonesia.com/teknologi/20261106190419-185-1424237/openai-rilis-model-cybersecurity-terbaru-bisa-apa-saja",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-07T05:30:31.000Z",
+   "summary": "OpenAI meluncurkan GPT-6 Cyber, model AI canggih untuk keamanan siber. Mampu menemukan kerentanan dan mempercepat perbaikan perangkat lunak secara efektif.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "a00b76a0c03e",
+   "title": "Demokrat Menang Pemilu Sela AS, Perkembangan AI Diprediksi Melambat",
+   "url": "https://www.cnnindonesia.com/teknologi/20261106132329-192-1424110/demokrat-menang-pemilu-sela-as-perkembangan-ai-diprediksi-melambat",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-07T01:30:28.000Z",
+   "summary": "Kemenangan Partai Demokrat di AS diprediksi memperlambat perkembangan AI, mempengaruhi perdagangan global, dan meningkatkan persaingan teknologi dengan China.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "d2438fbe37cf",
+   "title": "ASUS Raih Penghargaan Inovasi Komputasi Berbasis AI",
+   "url": "https://www.cnnindonesia.com/teknologi/20261104142249-211-1423230/asus-raih-penghargaan-inovasi-komputasi-berbasis-ai",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-06T14:24:14.000Z",
+   "summary": "PT Asus Technology Indonesia meraih penghargaan Excellence in Business Technology Solutions di CNN Indonesia Awards 2026, berkat inovasi solusi komputasi.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "d4a0feba1cbc",
+   "title": "Inovasi Sistem ERP Bawa HashMicro Raih Best AI Solution for Business",
+   "url": "https://www.cnnindonesia.com/teknologi/20261105135107-190-1423655/inovasi-sistem-erp-bawa-hashmicro-raih-best-ai-solution-for-business",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-06T14:19:11.000Z",
+   "summary": "HashMicro raih penghargaan Best AI Solution for Business di CNN Indonesia Awards 2026. Inovasi teknologi mereka tingkatkan efisiensi dan produktivitas bisnis.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "15078f80760e",
+   "title": "Bubble AI Pecah Sampai Amerika, Rp18.000 Triliun Menguap Semalam",
+   "url": "https://www.cnbcindonesia.com/tech/20261106165209-37-783069/bubble-ai-pecah-sampai-amerika-rp18000-triliun-menguap-semalam",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-06T14:10:00.000Z",
+   "summary": "Kekhawatiran gelembung AI mengguncang pasar saham AS, dengan Nasdaq dan SdanP 500 mengalami penurunan signifikan.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "9f7934c85b78",
+   "title": "Berkat Transformasi Digital dan Inovasi AI, Telkomsel Raih Penghargaan",
+   "url": "https://www.cnnindonesia.com/teknologi/20261105070726-218-1423474/berkat-transformasi-digital-dan-inovasi-ai-telkomsel-raih-penghargaan",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-06T13:53:16.000Z",
+   "summary": "Telkomsel raih penghargaan Outstanding AI-Native Network di CNN Indonesia Awards 2026 berkat inovasi jaringan cerdas yang optimalkan layanan.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "56da412d9e82",
+   "title": "Kembangkan AI untuk Kelola Sampah, Pemkot Semarang Raih Penghargaan",
+   "url": "https://www.cnnindonesia.com/teknologi/20261104155804-192-1423289/kembangkan-ai-untuk-kelola-sampah-pemkot-semarang-raih-penghargaan",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-06T13:42:56.000Z",
+   "summary": "Pemerintah Kota Semarang raih penghargaan kategori Excellence in Smart Waste Management Innovation dalam ajang CNN Indonesia Awards 2026.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "9c5fd672ea6c",
+   "title": "Tsunami Biru Ganti Rezim, Proyek Data Center Bisa Berhenti Total",
+   "url": "https://www.cnbcindonesia.com/tech/20261106143752-37-783003/tsunami-biru-ganti-rezim-proyek-data-center-bisa-berhenti-total",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-06T10:10:00.000Z",
+   "summary": "Pembangunan data center di AS tertekan setelah kemenangan Demokrat. Politikus menyerukan moratorium, khawatir dampak lingkungan dan pekerjaan.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "5b019bb9a6e3",
+   "title": "Apple Peringatkan Risiko Agen AI Nakal di Luar Kendali",
+   "url": "https://www.cnnindonesia.com/teknologi/20261106095008-192-1424027/apple-peringatkan-risiko-agen-ai-nakal-di-luar-kendali",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-06T09:00:09.000Z",
+   "summary": "Apple memperingatkan tentang risiko agen AI yang dapat bertindak otonom, berpotensi merusak reputasi dan memicu tuntutan hukum bagi perusahaan.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "16d7eca592e8",
+   "title": "Bos Tahu Semua Gerak-Gerik dan Ucapan Karyawan, Pantau Pakai AI",
+   "url": "https://www.cnbcindonesia.com/tech/20261106131918-37-782975/bos-tahu-semua-gerak-gerik-dan-ucapan-karyawan-pantau-pakai-ai",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-06T08:10:00.000Z",
+   "summary": "Perusahaan Inggris The Co-op menggunakan AI untuk memantau percakapan pegawai, menimbulkan kontroversi.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "7e4f22b0a17b",
+   "title": "Cara Kerja ChatHPT Buatan Muhammadiyah yang Bisa Buat Naskah Khutbah",
+   "url": "https://www.cnbcindonesia.com/tech/20261106132928-37-782981/cara-kerja-chathpt-buatan-muhammadiyah-yang-bisa-buat-naskah-khutbah",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-06T07:40:00.000Z",
+   "summary": "Muhammadiyah luncurkan ChatHPT, chatbot AI untuk menjawab pertanyaan keagamaan. Memudahkan akses fatwa dan putusan Tarjih dengan sumber resmi.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "63dc975055b1",
+   "title": "Sumber Dolar Baru RI Justru Mengalir Deras ke Tetangga",
+   "url": "https://www.cnbcindonesia.com/tech/20261106120449-37-782931/sumber-dolar-baru-ri-justru-mengalir-deras-ke-tetangga",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-06T05:30:00.000Z",
+   "summary": "Google berinvestasi US$15 miliar di Malaysia untuk pusat data dan infrastruktur. Ini mendukung pertumbuhan ekonomi digital dan menciptakan 9.000 lapangan kerja.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "779f4d249998",
+   "title": "Kejar Tayang, Nyaris Semua Microdrama Drama China Bukan Buatan Manusia",
+   "url": "https://www.cnbcindonesia.com/tech/20261106102524-37-782887/kejar-tayang-nyaris-semua-microdrama-drama-china-bukan-buatan-manusia",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-06T04:55:00.000Z",
+   "summary": "Sebanyak 490 ribu microdrama China dirilis tahun 2026, 90% di antaranya menggunakan AI.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "f9bf92394a53",
+   "title": "Ganti 25.000 PNS Pakai AI, Negara Ini Hemat Rp 71 Triliun",
+   "url": "https://www.cnbcindonesia.com/tech/20261106102924-37-782892/ganti-25000-pns-pakai-ai-negara-ini-hemat-rp-71-triliun",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-06T04:10:00.000Z",
+   "summary": "Pemerintah Belanda akan memangkas 16% pegawai negeri sipil dalam 10 tahun, menggantikan tugas dengan AI untuk efisiensi dan penghematan.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "e1a30b7422c2",
+   "title": "Susah Dapat Listrik, Data Center Pakai Mesin Jet Bekas Boeing",
+   "url": "https://www.cnbcindonesia.com/tech/20261106092817-37-782852/susah-dapat-listrik-data-center-pakai-mesin-jet-bekas-boeing",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-06T02:50:00.000Z",
+   "summary": "Perusahaan teknologi mencari solusi energi alternatif untuk data center AI dengan memodifikasi mesin jet bekas menjadi pembangkit listrik.",
+   "topics": [
+    "ai",
+    "energi"
+   ]
+  },
+  {
+   "id": "4ed8132c93e4",
+   "title": "Muhammadiyah Luncurkan Platform ChatHPT, Ini Fungsinya",
+   "url": "https://www.cnnindonesia.com/teknologi/20261106070446-192-1423964/muhammadiyah-luncurkan-platform-chathpt-ini-fungsinya",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-06T01:35:01.000Z",
+   "summary": "Muhammadiyah luncurkan ChatHPT, asisten AI untuk memahami putusan dan fatwa Majelis Tarjih.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "4ba63069beca",
+   "title": "Rakyat Bersatu Tolak Proyek Data Center, Presiden Tak Berkutik",
+   "url": "https://www.cnbcindonesia.com/tech/20261105152303-37-782671/rakyat-bersatu-tolak-proyek-data-center-presiden-tak-berkutik",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-05T14:00:00.000Z",
+   "summary": "Kemenangan Partai Demokrat di AS dipicu penolakan proyek data center AI, mengguncang pasar saham dan mengubah arah kebijakan teknologi.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "f2163054260b",
+   "title": "10 Cara untuk Menjaga Data Pribadi di Internet",
+   "url": "https://www.cnnindonesia.com/teknologi/20261105095726-185-1423549/10-cara-untuk-menjaga-data-pribadi-di-internet",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-05T10:30:19.000Z",
+   "summary": "Risiko keamanan digital meningkat dengan perkembangan AI. Pelajari cara melindungi data pribadi dari peretasan dan pencurian dengan langkah-langkah efektif.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "a155bbf2a5de",
+   "title": "China Menggila Borong Produk Amerika, Nilainya Tembus Rp 633 Triliun",
+   "url": "https://www.cnbcindonesia.com/tech/20261105151027-37-782666/china-menggila-borong-produk-amerika-nilainya-tembus-rp-633-triliun",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-05T10:20:00.000Z",
+   "summary": "Permintaan kartu grafis Nvidia melonjak di China, dengan ByteDance, Alibaba, dan Tencent memesan 3 juta unit senilai Rp633 triliun.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "9173371d8827",
+   "title": "Profesi Bergaji Tinggi Kini Terancam Jadi Ladang Pengangguran Baru",
+   "url": "https://www.cnbcindonesia.com/tech/20261105133110-37-782623/profesi-bergaji-tinggi-kini-terancam-jadi-ladang-pengangguran-baru",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-05T09:10:00.000Z",
+   "summary": "Industri software developer menghadapi krisis akibat AI. Banyak developer cemas kehilangan pekerjaan. Simak!",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "cf5873eedc5b",
+   "title": "Survei HSBC: Korporasi RI Optimistis AI Dorong Transformasi Bisnis",
+   "url": "https://www.cnbcindonesia.com/tech/20261105133308-39-782622/survei-hsbc-korporasi-ri-optimistis-ai-dorong-transformasi-bisnis",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-05T08:40:13.000Z",
+   "summary": "",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "84e8aacc6c21",
+   "title": "Ditolak Warga, Proyek Data Center Kini Terancam Bubar",
+   "url": "https://www.cnbcindonesia.com/tech/20261105113505-37-782576/ditolak-warga-proyek-data-center-kini-terancam-bubar",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-05T07:10:00.000Z",
+   "summary": "Penolakan masyarakat AS terhadap pusat data raksasa berbuah hasil setelah Demokrat menguasai Kongres. Simak!",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "3c655c6bd5ab",
+   "title": "Berat di Ongkos, Bisnis Masa Depan Ternyata Susah Cuan",
+   "url": "https://www.cnbcindonesia.com/tech/20261104123250-37-782226/berat-di-ongkos-bisnis-masa-depan-ternyata-susah-cuan",
+   "source": "CNBC Indonesia",
+   "sourceId": "cnbc-indonesia",
+   "publishedAt": "2026-11-05T00:40:00.000Z",
+   "summary": "Pendapatan Anthropic melonjak 50% menjadi US$ 17 miliar, namun biaya komputasi terus membengkak, menyusutkan margin.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "a28da2686573",
+   "title": "AI Bisa Deteksi Potensi Gangguan Sistem IT Sebelum Layanan Terganggu",
+   "url": "https://www.cnnindonesia.com/teknologi/20261104211052-192-1423420/ai-bisa-deteksi-potensi-gangguan-sistem-it-sebelum-layanan-terganggu",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-04T14:30:54.000Z",
+   "summary": "Teknologi AI kini membantu perusahaan mendeteksi gangguan infrastruktur IT lebih awal. Helios dan Motadata hadirkan solusi pemantauan terintegrasi.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "f6d03c763dff",
+   "title": "AI Temukan Celah Keamanan, Bagaimana Kesiapan Siber Indonesia?",
+   "url": "https://www.cnnindonesia.com/teknologi/20261104082340-185-1423043/ai-temukan-celah-keamanan-bagaimana-kesiapan-siber-indonesia",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-04T08:30:00.000Z",
+   "summary": "Teknologi AI ungkap celah keamanan perangkat lunak. BSSN siapkan langkah mitigasi dan dukungan untuk sistem siber Indonesia. Kesiapan dan kolaborasi jadi kunci.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "9eb17d32a249",
+   "title": "Kacamata Pintar Meta Resmi Masuk Indonesia, Harga Mulai Rp8 Jutaan",
+   "url": "https://www.cnnindonesia.com/teknologi/20261103231625-206-1422979/kacamata-pintar-meta-resmi-masuk-indonesia-harga-mulai-rp8-jutaan",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-03T23:55:08.000Z",
+   "summary": "Meta resmi luncurkan kacamata AI di Indonesia, termasuk Ray-Ban Meta dan Oakley Meta. Tersedia mulai 11 November 2026 dengan harga mulai Rp8,8 juta.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "c8e618863bea",
+   "title": "Kenapa AI Bikin Meta Untung, tapi Bikin Rugi Google?",
+   "url": "https://www.cnnindonesia.com/teknologi/20261103125533-192-1422726/kenapa-ai-bikin-meta-untung-tapi-bikin-rugi-google",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-03T11:05:33.000Z",
+   "summary": "Google dan Meta bersaing ketat dalam bisnis iklan. Pertumbuhan iklan Meta lebih cepat berkat AI, sementara Google menghadapi tantangan baru dalam pencarian.",
+   "topics": [
+    "ai"
+   ]
+  },
+  {
+   "id": "8e808cc277a3",
+   "title": "Robot Humanoid China Makin Canggih, Kini Berlomba Kembangkan Otak AI",
+   "url": "https://www.cnnindonesia.com/teknologi/20261102144732-192-1422334/robot-humanoid-china-makin-canggih-kini-berlomba-kembangkan-otak-ai",
+   "source": "CNN Indonesia",
+   "sourceId": "cnn-indonesia",
+   "publishedAt": "2026-11-02T12:15:32.000Z",
+   "summary": "Robot humanoid China semakin canggih berkat pengembangan embodied AI. Fokus pada kecerdasan, bukan perangkat keras, mendorong investasi dan persaingan global.",
+   "topics": [
+    "ai"
+   ]
+  }
+ ]
+}

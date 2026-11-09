@@ -1,0 +1,10 @@
+{
+  "catatan": "Daftar sumber RSS. Alamat di bawah ditulis dari ingatan dan BELUM diverifikasi: jalankan 'npm run news' lalu lihat laporan tiap sumber. Sumber yang gagal dilewati, tidak merusak situs. Untuk menambah sumber, salin satu blok dan isi 'url' dengan alamat RSS resmi dari situs tersebut. Cek syarat penggunaan feed tiap situs sebelum dipakai di situs publik.",
+  "sources": [
+    { "id": "cnn-indonesia", "name": "CNN Indonesia", "url": "https://www.cnnindonesia.com/teknologi/rss", "enabled": true },
+    { "id": "cnbc-indonesia", "name": "CNBC Indonesia", "url": "https://www.cnbcindonesia.com/tech/rss", "enabled": true },
+    { "id": "antara", "name": "ANTARA", "url": "https://www.antaranews.com/rss/tekno.xml", "enabled": true },
+    { "id": "detik", "name": "detikInet", "url": "https://rss.detik.com/index.php/inet", "enabled": true },
+    { "id": "tempo", "name": "Tempo", "url": "https://rss.tempo.co/tekno", "enabled": true }
+  ]
+}
