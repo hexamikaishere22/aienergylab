@@ -225,11 +225,43 @@ const SIM_STYLES = `
 .dc-log-row span { font-size: .74rem; color: var(--dc-muted); }
 .dc-log-row a { color: inherit; text-decoration: underline; }
 
+/* Panduan belajar untuk pengguna baru */
+.learn-panel { margin: 0 0 16px; }
+.learn-head { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 10px 16px; }
+.learn-head h2 { margin: 4px 0 5px; font-size: 1.08rem; }
+.learn-lead { margin: 0; max-width: 76ch; color: hsl(var(--muted-foreground)); font-size: .86rem; line-height: 1.55; }
+.learn-pill { flex: 0 0 auto; border: 1px solid hsl(var(--border)); border-radius: 999px; padding: 5px 10px; color: hsl(var(--muted-foreground)); font-size: .74rem; }
+.learn-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 9px; padding: 0; margin: 15px 0 12px; list-style: none; }
+.learn-step { display: flex; align-items: flex-start; gap: 9px; min-width: 0; padding: 11px; border: 1px solid hsl(var(--border)); border-radius: 10px; background: hsl(var(--card)); }
+.learn-step-number { display: grid; flex: 0 0 25px; width: 25px; height: 25px; place-items: center; border-radius: 50%; background: hsl(var(--secondary)); color: hsl(var(--foreground)); font-size: .76rem; font-weight: 700; }
+.learn-step strong { display: block; margin: 1px 0 4px; font-size: .82rem; line-height: 1.35; }
+.learn-step p { margin: 0; color: hsl(var(--muted-foreground)); font-size: .76rem; line-height: 1.48; }
+.learn-practice { padding: 12px 14px; border-left: 4px solid #287f69; border-radius: 8px; background: hsl(var(--secondary) / .42); font-size: .82rem; line-height: 1.55; }
+.learn-practice strong { display: block; margin-bottom: 3px; }
+.learn-practice p { margin: 0; }
+.learn-details { margin-top: 10px; border: 1px solid hsl(var(--border)); border-radius: 9px; overflow: hidden; }
+.learn-details summary { cursor: pointer; padding: 11px 13px; font-size: .84rem; font-weight: 650; }
+.learn-details summary:hover { background: hsl(var(--secondary) / .4); }
+.learn-details summary:focus-visible { outline: 2px solid hsl(var(--ring)); outline-offset: -2px; }
+.learn-details-body { padding: 0 13px 13px; }
+.learn-details-intro { margin: 0 0 10px; color: hsl(var(--muted-foreground)); font-size: .78rem; line-height: 1.5; }
+.learn-glossary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 10px; margin: 0; }
+.learn-term { min-width: 0; padding: 9px 10px; border-radius: 8px; background: hsl(var(--secondary) / .35); }
+.learn-term dt { margin: 0 0 3px; font-size: .8rem; font-weight: 700; }
+.learn-term dd { margin: 0; color: hsl(var(--muted-foreground)); font-size: .77rem; line-height: 1.5; }
+.learn-reading-list { display: grid; gap: 8px; margin: 0; padding-left: 19px; font-size: .8rem; line-height: 1.55; }
+.learn-reading-list strong { color: hsl(var(--foreground)); }
+
 @media (max-width: 1000px) {
   .ws { grid-template-columns: minmax(0, 1fr); }
   .ws-stage { order: -1; }
+  .learn-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
+  .learn-steps { grid-template-columns: minmax(0, 1fr); }
+  .learn-glossary { grid-template-columns: minmax(0, 1fr); }
+  .learn-step { padding: 10px 11px; }
+  .learn-pill { margin-left: auto; }
   .dc-3d-bar { padding: 4px 12px 10px; }
   .dc-3d-btns .dc-anim { min-height: 40px; }
   .log-chart { height: 240px; }
@@ -2461,6 +2493,128 @@ const DEFAULTS = {
 
 type SceneMode = 'now' | 'demand' | 'combined';
 
+const LEARNING_STEPS = [
+  {
+    title: 'Periksa angka dasar',
+    description: 'Mulailah dari data fasilitas: beban perangkat IT (MW), PUE awal, tarif listrik, dan faktor emisi. Angka dasar ini menjadi titik pembanding bagi semua skenario.',
+  },
+  {
+    title: 'Uji kebutuhan dan efisiensi',
+    description: 'Geser pertumbuhan penggunaan AI, penghematan model, komputer/program, tumpang tindih, efek pantulan, dan PUE. Ubah satu pengaturan setiap kali agar pengaruhnya mudah dipahami.',
+  },
+  {
+    title: 'Atur sumber listrik',
+    description: 'Pilih porsi surya/angin, kecocokan waktu produksi, efisiensi baterai, dan asumsi harga listrik terbarukan. Bagian ini terutama mengubah sumber listrik, biaya, dan emisi.',
+  },
+  {
+    title: 'Amati lalu bandingkan',
+    description: 'Lihat ilustrasi pusat data dalam 2D atau 3D. Ganti tampilan Saat ini, Tanpa tindakan, dan Dengan solusi, kemudian baca tabel serta grafik lima skenario di bawahnya.',
+  },
+  {
+    title: 'Simpan hasil percobaan',
+    description: 'Beri catatan singkat lalu tekan “Catat percobaan ini”. Setelah ada dua catatan, grafik perbandingan tersedia. Unduh CSV untuk spreadsheet atau PDF untuk laporan.',
+  },
+] as const;
+
+const GLOSSARY_TERMS = [
+  ['AI workload / beban kerja AI', 'Jumlah pekerjaan yang dilakukan AI, misalnya pertanyaan, pembuatan gambar, atau pemrosesan data. Jika beban kerja naik, kebutuhan komputasi biasanya ikut naik.'],
+  ['Beban IT (IT load)', 'Daya listrik yang dipakai perangkat komputasi seperti server, chip, dan penyimpanan. Di simulator satuannya MW.'],
+  ['MW (megawatt)', 'Satuan daya. MW menunjukkan seberapa besar daya yang digunakan atau tersedia pada suatu saat; bukan jumlah energi yang dipakai selama setahun.'],
+  ['kWh, GWh, dan TWh', 'Satuan energi. kWh adalah kilowatt-jam; 1 GWh = 1 juta kWh dan 1 TWh = 1.000 GWh. Simulator menampilkan konsumsi tahunan dalam TWh.'],
+  ['PUE (Power Usage Effectiveness)', 'Perbandingan listrik seluruh fasilitas dengan listrik perangkat IT saja. PUE 1,5 berarti setiap 1 unit listrik untuk IT membutuhkan total 1,5 unit listrik fasilitas. Makin dekat ke 1,0, makin efisien.'],
+  ['Efisiensi model', 'Pengurangan listrik untuk pekerjaan AI yang sama karena memakai model yang lebih kecil atau lebih efisien. Penghematan nyata dapat bergantung pada mutu dan jenis tugas.'],
+  ['HW/SW (hardware/software)', 'Hardware adalah perangkat fisik seperti server dan chip; software adalah program yang menjalankannya. Pengaturan ini mewakili penghematan gabungan dari keduanya.'],
+  ['Overlap / tumpang tindih', 'Bagian penghematan model dan hardware/software yang dianggap memperbaiki hal yang sama. Simulator mengurangi bagian ini agar manfaat tidak dihitung dua kali.'],
+  ['Rebound effect / efek pantulan', 'Sebagian penghematan bisa hilang karena layanan yang lebih murah atau cepat kemudian dipakai lebih banyak. Contoh 20% berarti seperlima dari penghematan teoretis dibatalkan dalam asumsi model.'],
+  ['Energi terbarukan', 'Listrik dari sumber seperti matahari dan angin. Dalam model ini, mengganti sumber listrik dapat menurunkan emisi, tetapi tidak otomatis mengurangi jumlah kWh yang dibutuhkan.'],
+  ['Solar mix / porsi surya', 'Persentase dari pasokan energi terbarukan yang diasumsikan berasal dari surya. Sisanya diasumsikan berasal dari angin.'],
+  ['Temporal match / kecocokan waktu', 'Bagian listrik terbarukan yang tersedia pada waktu yang sama dengan kebutuhan pusat data. Ketidakcocokan waktu dimodelkan sebagai kebutuhan penyimpanan.'],
+  ['Efisiensi baterai', 'Bagian energi yang bisa digunakan kembali setelah disimpan dan dikeluarkan dari baterai. Contoh 85% berarti dari 100 kWh yang masuk, sekitar 85 kWh dapat dipakai kembali menurut asumsi sederhana ini.'],
+  ['Faktor kapasitas', 'Perbandingan produksi rata-rata pembangkit dengan produksi maksimal teoritisnya. Simulator memakai asumsi tetap 18% untuk surya dan 35% untuk angin, bukan data lokasi tertentu.'],
+  ['Tarif listrik', 'Harga energi per kWh. Tarif ini dipakai untuk memperkirakan biaya energi tahunan, bukan seluruh biaya pembangunan atau operasional fasilitas.'],
+  ['Faktor emisi', 'Perkiraan emisi gas rumah kaca untuk setiap kWh listrik, biasanya dalam kg CO₂e/kWh. Nilai ini membantu mengubah konsumsi listrik menjadi estimasi emisi.'],
+  ['CO₂e dan kt CO₂e', 'CO₂e berarti “setara karbon dioksida”, satu cara menyetarakan dampak berbagai gas rumah kaca. kt berarti kiloton; 1 kt = 1.000 ton.'],
+  ['Pasokan jaringan', 'Bagian kebutuhan listrik yang belum dipenuhi oleh sumber terbarukan dalam skenario, sehingga diasumsikan berasal dari jaringan listrik.'],
+  ['CAPEX', 'Capital expenditure atau belanja modal awal, misalnya biaya membeli server, membangun pembangkit, atau memasang baterai. CAPEX tidak dihitung dalam estimasi biaya simulator ini.'],
+  ['Simulasi sensitivitas', 'Cara mencoba beberapa asumsi untuk melihat bagaimana hasil berubah. Hasilnya membantu memahami arah dan besarnya pengaruh, tetapi bukan prediksi pasti atau audit energi.'],
+] as const;
+
+function LearningGuide() {
+  return (
+    <section className="panel learn-panel" aria-labelledby="beginner-guide-title" data-testid="beginner-guide">
+      <div className="learn-head">
+        <div>
+          <span className="eyebrow">PANDUAN PEMULA</span>
+          <h2 id="beginner-guide-title">Belajar menggunakan simulator</h2>
+          <p className="learn-lead">
+            Simulator ini membantu melihat bagaimana pertumbuhan penggunaan AI, efisiensi pusat data,
+            dan pilihan sumber listrik memengaruhi konsumsi energi, biaya, serta emisi. Ikuti urutan
+            berikut; kamu tidak perlu memahami semua istilah teknis sejak awal.
+          </p>
+        </div>
+        <span className="learn-pill">5 langkah praktis</span>
+      </div>
+
+      <ol className="learn-steps">
+        {LEARNING_STEPS.map((step, index) => (
+          <li className="learn-step" key={step.title}>
+            <span className="learn-step-number" aria-hidden="true">{index + 1}</span>
+            <div>
+              <strong>{step.title}</strong>
+              <p>{step.description}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+
+      <div className="learn-practice">
+        <strong>Latihan pertama: bedakan efisiensi dan energi terbarukan</strong>
+        <p>
+          Catat hasil awal. Lalu turunkan slider PUE baru saja (contoh 1,38 menjadi 1,25), dan catat
+          lagi untuk melihat dampak efisiensi. Setelah itu, kembalikan PUE ke nilai awal, naikkan porsi
+          terbarukan, lalu catat percobaan ketiga. Bandingkan hasilnya: PUE yang lebih rendah dapat
+          mengurangi kebutuhan listrik fasilitas, sedangkan porsi terbarukan terutama mengurangi emisi,
+          bukan jumlah listrik yang dipakai. Angka contoh hanya untuk belajar; sesuaikan dengan data yang tersedia.
+        </p>
+      </div>
+
+      <details className="learn-details">
+        <summary>Glosarium: arti istilah yang dipakai ({GLOSSARY_TERMS.length} istilah)</summary>
+        <div className="learn-details-body">
+          <p className="learn-details-intro">
+            Gunakan daftar ini saat menemukan singkatan atau istilah pada slider, tabel, grafik, dan laporan.
+          </p>
+          <dl className="learn-glossary">
+            {GLOSSARY_TERMS.map(([term, description]) => (
+              <div className="learn-term" key={term}>
+                <dt>{term}</dt>
+                <dd>{description}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </details>
+
+      <details className="learn-details">
+        <summary>Cara membaca hasil dan memahami batas simulasi</summary>
+        <div className="learn-details-body">
+          <ul className="learn-reading-list">
+            <li><strong>Saat ini:</strong> kondisi berdasarkan angka dasar fasilitas yang diberikan ke simulator.</li>
+            <li><strong>Proyeksi tanpa tindakan:</strong> penggunaan AI bertambah sesuai slider pertumbuhan, tanpa optimasi efisiensi.</li>
+            <li><strong>Efisiensi:</strong> proyeksi pertumbuhan yang sama, ditambah penghematan komputasi dan PUE baru.</li>
+            <li><strong>Energi terbarukan:</strong> proyeksi pertumbuhan tanpa optimasi efisiensi, tetapi sebagian pasokan listrik diganti surya/angin.</li>
+            <li><strong>Gabungan:</strong> menggabungkan efisiensi dan pasokan terbarukan. Ini skenario yang disimpan pada Catatan percobaan.</li>
+            <li><strong>Target −30%:</strong> dihitung dari penurunan konsumsi skenario Efisiensi dibanding Proyeksi tanpa tindakan. Mengganti sumber listrik menjadi terbarukan tidak dihitung sebagai penghematan kWh.</li>
+            <li><strong>Biaya tahunan:</strong> estimasi biaya energi saja. Biaya investasi awal, sambungan, pajak, dan tarif daya puncak tidak termasuk.</li>
+            <li><strong>Emisi:</strong> emisi operasional listrik terbarukan diasumsikan nol dalam model. Ini bukan perhitungan emisi sepanjang daur hidup panel, turbin, atau baterai.</li>
+            <li><strong>Kapasitas surya/angin:</strong> perkiraan ilustratif berdasarkan faktor kapasitas tetap. Model tidak menghitung produksi per jam, cuaca, batas daya baterai, atau kebutuhan desain jaringan; jangan gunakan sebagai rancangan teknis.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+  );
+}
+
 /**
  * Simulasi sensitivitas edukatif, bukan prediksi atau audit energi.
  * Angka awal harus diganti dengan data fasilitas sebenarnya untuk analisis proyek.
@@ -2920,6 +3074,8 @@ export default function Simulator() {
         <span className="assumption-tag">MODEL SENSITIVITAS</span>
       </header>
 
+      <LearningGuide />
+
       <div className="ws">
         {/* ---------------- Kolom slider ---------------- */}
         <div className="ws-controls">
@@ -3039,7 +3195,7 @@ export default function Simulator() {
               step={5}
               suffix="%"
               id="clean-share"
-              description="Bagian kebutuhan listrik yang dipasok sumber terbarukan; sisanya dari Jaringan internet biasa. Ini menurunkan emisi, tetapi tidak mengurangi jumlah listrik yang dipakai."
+              description="Bagian kebutuhan listrik yang dipasok sumber terbarukan; sisanya dipasok dari jaringan listrik. Ini menurunkan emisi, tetapi tidak mengurangi jumlah listrik yang dipakai."
               onChange={setCleanShare}
             />
             <RangeControl
