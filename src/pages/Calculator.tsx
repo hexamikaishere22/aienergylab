@@ -116,6 +116,34 @@ const STYLES = `
 .glossary-item dt { font-weight: 600; margin-bottom: 4px; }
 .glossary-item dd { margin: 0; font-size: .9rem; line-height: 1.55; }
 .glossary-item dd + dd { margin-top: 6px; opacity: .8; }
+
+/* Cegah angka hasil yang panjang melewati kartu, terutama di layar Android. */
+.metrics-grid,
+.metric-card {
+  min-width: 0;
+  max-width: 100%;
+}
+.metric-card {
+  overflow: hidden;
+}
+.metric-value {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  font-variant-numeric: tabular-nums;
+}
+.metric-card[data-testid="result-annual-cost"] .metric-value {
+  font-size: clamp(1rem, 4vw, 1.6rem);
+  line-height: 1.25;
+}
+@media (max-width: 480px) {
+  .metric-card[data-testid="result-annual-cost"] .metric-value {
+    font-size: clamp(.9rem, 4.2vw, 1.15rem);
+    letter-spacing: -0.025em;
+  }
+}
 `;
 
 function EditableField({ label, value, unit, help, plain, termId, testId, min, max, step, onChange, onExplain }: { label: string; value: number; unit: string; help: string; plain: string; termId: string; testId: string; min: number; max: number; step: number; onChange: (value: number) => void; onExplain: (termId: string) => void }) {
